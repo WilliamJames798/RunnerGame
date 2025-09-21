@@ -1,0 +1,9 @@
+开始游戏继续设置音效音乐返回退出
+分数最高分金币距离速度倍数加成
+游戏结束再试一次复活
+护盾磁铁双倍暂停继续
+0123456789
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+: . , ! ? ' " ( ) - + × ÷ = < > _
+：。，！？‘“（）－＋×÷＝＜＞ 

@@ -8,6 +8,7 @@ public class CollectCoin : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         coinFX.Play(); // 播放音效
+        CoinCountUI.coinCount++; // 增加金币数量
         this.gameObject.SetActive(false); // 隐藏金币
     }
 }
