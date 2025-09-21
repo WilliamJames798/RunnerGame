@@ -13,8 +13,13 @@ public class SegmentGenerator : MonoBehaviour
     [SerializeField] private int maxSegments = 5; // 最大路段数量
     void Start()
     {
-        // 初始化路段数组
-        for (int i = 0; i < segmentCount; i++)
+        // 生成初始路段
+        GameObject startSegment = Instantiate(segments[0], new Vector3(0, 0, spawnZ), Quaternion.identity);
+        startSegment.transform.SetParent(transform, false);
+        spawnZ += segmentLength;
+
+        // 生成更多路段
+        for (int i = 1; i < segmentCount; i++)
         {
             SpawnSegment();
         }
@@ -38,7 +43,7 @@ public class SegmentGenerator : MonoBehaviour
     private void SpawnSegment()
     {
         // 从路段数组中随机选择一个路段
-        int index = UnityEngine.Random.Range(0, segments.Length);
+        int index = UnityEngine.Random.Range(1, segments.Length);
         GameObject prefab = segments[index];
         
         // 生成路段
