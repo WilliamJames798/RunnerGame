@@ -8,9 +8,9 @@ public class SegmentGenerator : MonoBehaviour
     [SerializeField] private Transform playerTransform; // 玩家位置
     [SerializeField] private GameObject[] segments; // 路段数组
     [SerializeField] private float segmentLength = 100f; // 每个路段的长度
-    [SerializeField] private int segmentCount = 3; // 初始生成数量
+    [SerializeField] private int segmentCount = 2; // 初始生成数量
     [SerializeField] private float spawnZ = 0f; // 下一个路段生成位置
-    [SerializeField] private int maxSegments = 5; // 最大路段数量
+    [SerializeField] private int maxSegments = 8; // 最大路段数量
     void Start()
     {
         // 生成初始路段
